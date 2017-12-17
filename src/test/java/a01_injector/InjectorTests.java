@@ -1,4 +1,5 @@
 package a01_injector;
+
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 import com.google.inject.Module;
@@ -9,9 +10,7 @@ import javax.inject.Singleton;
 import static org.hamcrest.Matchers.*;
 import static org.junit.Assert.assertThat;
 
-
 interface IEditor {
-
 }
 
 class Editor implements IEditor {
@@ -28,7 +27,7 @@ class Editor2 implements IEditor {
 }
 
 
-public class Tests {
+public class InjectorTests {
 
     @Test
     public void shouldReturnInstance_whenNoModuleAndRetrievedByClass() {

@@ -1,4 +1,4 @@
-package basic02;
+package a02_dependencies;
 
 import com.google.inject.BindingAnnotation;
 import java.lang.annotation.Target;

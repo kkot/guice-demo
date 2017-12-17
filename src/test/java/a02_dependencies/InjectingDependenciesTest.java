@@ -1,5 +1,4 @@
-package basic02;
-
+package a02_dependencies;
 
 import com.google.inject.Guice;
 import com.google.inject.Injector;
@@ -14,18 +13,15 @@ import static org.hamcrest.CoreMatchers.notNullValue;
 import static org.junit.Assert.assertThat;
 
 interface IDependencyService {
-
 }
 
 class DependencyService implements IDependencyService {
-
 }
 
 class CachedDependencyService implements IDependencyService {
-
 }
 
-public class Basic02_InjectingDependencies {
+public class InjectingDependenciesTest {
 
     static class EditorField {
         @Inject
@@ -51,7 +47,6 @@ public class Basic02_InjectingDependencies {
     }
 
     static class EditorSet {
-
         private IDependencyService dependencyService;
 
         @Inject
@@ -79,7 +74,6 @@ public class Basic02_InjectingDependencies {
     }
 
     static class EditorConstructor {
-
         private IDependencyService dependencyService;
 
         @Inject
@@ -107,7 +101,6 @@ public class Basic02_InjectingDependencies {
     }
 
     static class EditorBothServices {
-
         private IDependencyService dependencyService;
         private IDependencyService cachedDependencyService;
 
@@ -144,7 +137,6 @@ public class Basic02_InjectingDependencies {
     }
 
     static class EditorBothServicesAnnotation {
-
         private IDependencyService dependencyService;
         private IDependencyService cachedDependencyService;
 
